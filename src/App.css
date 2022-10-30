@@ -1,0 +1,10 @@
+.App {
+  padding: 1rem;
+  position: relative;
+}
+
+.arrow {
+  text-align: end;
+  position: absolute;
+  right: 350px;
+}

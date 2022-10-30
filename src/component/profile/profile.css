@@ -1,0 +1,23 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile__img {
+  display: block;
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+}
+
+#profile__name {
+  /* font-family: "Inter";
+  font-style: normal; */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #101828;
+  margin-top: 24px;
+}

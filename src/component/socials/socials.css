@@ -1,0 +1,8 @@
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin: 12px;
+}
