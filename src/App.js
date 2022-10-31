@@ -3,6 +3,7 @@ import React from "react";
 import Profile from "./component/profile/profile";
 import Links from "./component/links/links";
 import Socials from "./component/socials/socials";
+import Footer from "./component/footer/footer";
 
 import { ReactComponent as Arrow } from "./assets/arrow.svg";
 import { ReactComponent as Dot } from "./assets/dot.svg";
@@ -19,6 +20,7 @@ function App() {
       <Profile />
       <Links />
       <Socials />
+      <Footer />
     </div>
   );
 }

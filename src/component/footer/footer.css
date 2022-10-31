@@ -1,0 +1,28 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid #d0d5dd;
+  padding: 48px 0px;
+}
+
+#zuri {
+  width: 185.03px;
+  height: 24.74px;
+}
+
+#text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #667085;
+  margin: 0;
+  padding: 0;
+}
+
+#i4g {
+  width: 132.13px;
+  height: 32px;
+}
