@@ -8,10 +8,10 @@ import "./socials.css";
 const Socials = () => {
   return (
     <div className="socials">
-      <a href="https://github.com/Hotmann" className="logo" id="github">
+      <a href="hotmann" className="logo" id="slack">
         <Slack />
       </a>
-      <a href="hotmann" className="logo" id="slack">
+      <a href="https://github.com/Hotmann" className="logo" id="github">
         <Github />
       </a>
     </div>
