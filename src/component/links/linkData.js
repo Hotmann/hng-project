@@ -27,7 +27,7 @@ const LINK__DATA = [
   {
     id: "book__design",
     url: "https://books.zuri.team/design-rules",
-    btnName: "Background Check for Coders",
+    btnName: "Design Books",
   },
 ];
 

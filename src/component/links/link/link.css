@@ -13,8 +13,11 @@
   line-height: 28px;
   font-weight: 500;
   cursor: pointer;
-  box-shadow: 0 0 #0000;
   transition: all 0.5s cubic-bezier(0.17, 0.67, 0.68, 0.64);
+}
+.btn__link:hover {
+  transform: translate(-0.2%, -5%);
+  box-shadow: 0 0 10px #0b091859;
 }
 
 @media only screen and (max-width: 1024px) {
