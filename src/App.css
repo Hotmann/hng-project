@@ -13,14 +13,27 @@
 
 .arrow {
   display: inline;
-  padding-right: 33%;
+  padding-right: 15%;
 }
 
 .dot {
   display: none;
+  padding-right: 15%;
 }
 
 @media only screen and (max-width: 1024px) {
+  .App {
+    padding: 1.2rem;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    padding: 1rem;
+    margin: 0;
+  }
+
   .arrow {
     display: none;
   }
