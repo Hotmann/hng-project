@@ -1,10 +1,31 @@
 .App {
+  font-family: "Inter";
+  font-style: normal;
   padding: 1rem;
-  position: relative;
+  margin: 0 auto;
+}
+
+.back {
+  margin-top: 28px;
+  text-align: end;
+  display: block;
 }
 
 .arrow {
-  text-align: end;
-  position: absolute;
-  right: 350px;
+  display: inline;
+  padding-right: 33%;
+}
+
+.dot {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .arrow {
+    display: none;
+  }
+
+  .dot {
+    display: inline;
+  }
 }

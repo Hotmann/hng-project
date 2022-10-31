@@ -11,7 +11,7 @@ const Socials = () => {
       <a href="https://github.com/Hotmann" className="logo" id="github">
         <Slack />
       </a>
-      <a href="https://twitter.com/_Hotmann" className="logo" id="slack">
+      <a href="hotmann" className="logo" id="slack">
         <Github />
       </a>
     </div>

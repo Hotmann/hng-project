@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import LINK__DATA from "./linkData";
 import Link from "./link/link";
-// import Image from "../component/image/image";
 
 import "./links.css";
 
