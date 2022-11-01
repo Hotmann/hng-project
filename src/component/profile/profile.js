@@ -8,10 +8,10 @@ const Profile = () => {
   return (
     <div className="profile">
       <img src={picture} alt="Profile" id="profile__img" />
-      <p id="profile__name"> Ogunbowale Uthman</p>
-      <p id="slack" hidden>
-        hotmann
-      </p>
+      <h2 id="twitter">@_Hotmann</h2>
+      <h2 id="slack" hidden>
+        Hotmann
+      </h2>
     </div>
   );
 };

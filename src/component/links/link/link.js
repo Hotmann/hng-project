@@ -4,7 +4,13 @@ import "./link.css";
 
 const Link = (props) => {
   return (
-    <a href={props.url} className="btn__link" id={props.id}>
+    <a
+      href={props.url}
+      className="btn"
+      id={props.id}
+      type="button"
+      title={props.title}
+    >
       {props.btnName}
     </a>
   );
