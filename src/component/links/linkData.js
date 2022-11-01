@@ -9,13 +9,13 @@ const LINK__DATA = [
     id: "btn__zuri",
     url: "https://training.zuri.team/",
     btnName: "Zuri Team",
-    sub_text: "This is home page of zuri",
+    title: "This is home page of zuri",
   },
   {
     id: "books",
     url: "https://books.zuri.team",
     btnName: "Zuri Books",
-    sub_text: "This is where you find books about design and coding",
+    title: "This is where you find books about design and coding",
   },
   {
     id: "book__python",
