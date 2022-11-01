@@ -20,6 +20,12 @@
   box-shadow: 0 0 10px #0b091859;
 }
 
+.txt {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 @media only screen and (max-width: 1024px) {
   .btn {
     width: 81%;

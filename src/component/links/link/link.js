@@ -6,7 +6,7 @@ const Link = (props) => {
   return (
     <a
       href={props.url}
-      className="btn"
+      className="btn txt"
       id={props.id}
       type="button"
       title={props.title}

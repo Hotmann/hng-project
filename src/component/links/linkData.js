@@ -3,7 +3,7 @@ const LINK__DATA = [
     id: "btn__twitter",
     url: "https://twitter.com/_Hotmann",
     btnName: "Twitter Link",
-    title: "THis is the link to my twitter page",
+    title: "This is the link to my twitter page",
   },
   {
     id: "btn__zuri",
