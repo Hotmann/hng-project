@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="app">
       <Routes>
-        <Route path="/hng-project" element={<Hompage />} />
-        <Route path="/hng-project/contact" element={<Contact />} />
+        <Route path="/" element={<Hompage />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
