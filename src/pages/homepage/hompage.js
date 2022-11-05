@@ -16,7 +16,6 @@ function Homepage() {
         <Arrow className="arrow" />
         <Dot className="dot" />
       </a>
-      <a href="/hng-project/contact">Contact</a>
       <Profile />
       <Links />
       <Socials />

@@ -1,5 +1,11 @@
 const LINK__DATA = [
   {
+    id: "contact",
+    url: "hng-project/contact",
+    btnName: "Contact",
+    title: "Contact",
+  },
+  {
     id: "btn__twitter",
     url: "https://twitter.com/_Hotmann",
     btnName: "Twitter Link",
