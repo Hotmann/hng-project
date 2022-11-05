@@ -12,7 +12,7 @@ function App() {
     <div className="app">
       <Routes>
         <Route path="/hng-project" element={<Hompage />} />
-        <Route path="/hng-project/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
