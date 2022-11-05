@@ -10,6 +10,7 @@ function Contact() {
     lastName: "",
     email: "",
     message: "",
+    check: false,
   });
   function handleSubmit(event) {
     event.preventDefault();
@@ -63,6 +64,19 @@ function Contact() {
           value={contactForm.message}
           handleChange={handleChange}
         />
+        {/* <input type="checkbox" id="checkbox"  value={contactForm.check}> */}
+        <div>
+          <input
+            id="checkbox"
+            type="checkbox"
+            value={contactForm.check}
+            handleChange={handleChange}
+          />
+          <label id="label" for="checkbox">
+            You agree to providing your data to Ogunbowale Uthman who may
+            contact you.
+          </label>
+        </div>
       </form>
     </div>
   );
