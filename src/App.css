@@ -1,8 +1,8 @@
 .app {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  margin: 0 5rem;
-  padding: 0;
+  padding: 0 5rem;
+  margin: 0;
 }
 
 .back {
@@ -22,16 +22,14 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .App {
-    padding: 1.2rem;
-    margin: 0;
+  .app {
+    padding: 0 2rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .App {
-    padding: 1rem;
-    margin: 0;
+  .app {
+    padding: 0 1rem;
   }
 
   .arrow {

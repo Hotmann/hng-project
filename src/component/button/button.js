@@ -1,13 +1,9 @@
 import React from "react";
 
-import "./Button.css";
+import "./button.css";
 
 const Button = (props) => (
-  <button
-    className="btn_submit"
-    onClick={props.clicked}
-    disabled={props.disabled}
-  >
+  <button id={props.btnType} onClick={props.clicked} disabled={props.disabled}>
     {props.children}
   </button>
 );

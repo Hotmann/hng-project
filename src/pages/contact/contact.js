@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Form from "../../component/form/form";
+import Button from "../../component/button/button";
 
 import "./contact.css";
 
@@ -64,7 +65,6 @@ function Contact() {
           value={contactForm.message}
           handleChange={handleChange}
         />
-        {/* <input type="checkbox" id="checkbox"  value={contactForm.check}> */}
         <div>
           <input
             id="checkbox"
@@ -77,6 +77,7 @@ function Contact() {
             contact you.
           </label>
         </div>
+        <Button btnType="btn_submit">Send message</Button>
       </form>
     </div>
   );

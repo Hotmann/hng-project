@@ -1,10 +1,6 @@
 .contact {
-  align-items: center;
   margin: 4rem 0 6rem 0;
-  padding: 0 17.5rem;
-}
-
-.name {
+  padding: 0 11.9rem;
 }
 
 .heading {
@@ -12,6 +8,24 @@
   font-size: 36px;
   line-height: 44px;
   margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+form {
+  max-width: 720px;
+  width: 100%;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+}
+.name div {
+  max-width: 348px;
+  width: 100%;
 }
 
 .text {
@@ -22,9 +36,60 @@
 }
 
 #checkbox {
-  width: auto;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f4f7;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
 }
 #label {
   display: inline;
   margin: 0 0.75rem;
+  color: #475467;
+}
+
+#checkbox:checked {
+  background-color: #f9fafb;
+  border: 1px solid #1570ef;
+}
+
+#checkbox:focus {
+  background-color: #ffffff;
+  border: 1px solid #84caff;
+  box-shadow: 0px 0px 0px 4px #d1e9ff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact {
+    margin: 4rem 0;
+    padding: 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .contact {
+    margin: 4rem 0;
+    padding: 0;
+  }
+
+  .name {
+    display: block;
+  }
+  .name div {
+    max-width: 100%;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  #label {
+    display: inline;
+    margin: 0 0.75rem;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

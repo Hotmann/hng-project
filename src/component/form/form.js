@@ -13,6 +13,7 @@ const Form = (props) => {
           onChange={props.handleChange}
           value={props.value}
           {...props}
+          required
         />
       );
       break;
@@ -23,11 +24,12 @@ const Form = (props) => {
           onChange={props.handleChange}
           value={props.value}
           {...props}
+          required
         />
       );
       break;
     default:
-      inputElem = <input />;
+      inputElem = <input required />;
   }
   return (
     <div className={props.id}>
