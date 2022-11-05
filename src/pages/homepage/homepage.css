@@ -1,8 +1,8 @@
-.app {
+.homepage {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  margin: 0 5rem;
-  padding: 0;
+  padding: 2.8rem;
+  margin: 0 4.2rem;
 }
 
 .back {
@@ -22,14 +22,14 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .App {
+  .homepage {
     padding: 1.2rem;
     margin: 0;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .App {
+  .homepage {
     padding: 1rem;
     margin: 0;
   }

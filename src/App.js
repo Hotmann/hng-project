@@ -1,25 +1,19 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-import Profile from "./component/profile/profile";
-import Links from "./component/links/links";
-import Socials from "./component/socials/socials";
+import Hompage from "./pages/homepage/hompage";
 import Footer from "./component/footer/footer";
-
-import { ReactComponent as Arrow } from "./assets/arrow.svg";
-import { ReactComponent as Dot } from "./assets/dot.svg";
+import Contact from "./pages/contact/contact";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <a href="/" class="back">
-        <Arrow className="arrow" />
-        <Dot className="dot" />
-      </a>
-      <Profile />
-      <Links />
-      <Socials />
+    <div className="app">
+      <Routes>
+        <Route path="/" element={<Hompage />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
       <Footer />
     </div>
   );
