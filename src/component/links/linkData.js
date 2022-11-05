@@ -1,7 +1,7 @@
 const LINK__DATA = [
   {
     id: "contact",
-    url: "/contact",
+    url: "hng-project/contact",
     btnName: "Contact",
     title: "Contact",
   },
