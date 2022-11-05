@@ -12,10 +12,11 @@ import "./homepage.css";
 function Homepage() {
   return (
     <div className="Hompage">
-      <a href="/" className="back">
+      <a href="/hng-project" className="back">
         <Arrow className="arrow" />
         <Dot className="dot" />
       </a>
+      <a href="/hng-project/contact">Contact</a>
       <Profile />
       <Links />
       <Socials />
