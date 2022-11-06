@@ -26,6 +26,7 @@ textarea:focus {
   border: 1px solid #84caff;
 }
 
+input:focus:invalid,
 textarea:focus:invalid {
   background: #ffffff;
   border: 1px solid #f89687;
