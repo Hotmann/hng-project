@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="app">
       <Routes>
-        <Route path="*" element={<Hompage />} />
+        <Route path="/" element={<Hompage />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
