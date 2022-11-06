@@ -3,7 +3,6 @@ import React from "react";
 import "./form.css";
 
 const Form = (props) => {
-  console.log(props);
   let inputElem = null;
   switch (props.inptype) {
     case "input":
@@ -33,9 +32,7 @@ const Form = (props) => {
   }
   return (
     <div className={props.id}>
-      <label className={`${props.value ? "shrink" : ""} form-input-label`}>
-        {props.label}
-      </label>
+      <label className={`${props.value} form-input-label`}>{props.label}</label>
       {inputElem}
     </div>
   );

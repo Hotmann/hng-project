@@ -13,12 +13,21 @@ function Contact() {
     message: "",
     check: false,
   });
+
   function handleSubmit(event) {
     event.preventDefault();
+    setContactForm({
+      firstName: "",
+      lastName: "",
+      email: "",
+      message: "",
+      check: false,
+    });
   }
-  function handleChange(event) {
-    setContactForm(event.target.value);
-  }
+  const handleChange = (event) => {
+    setContactForm({ ...contactForm, [event.target.name]: event.target.value });
+  };
+
   return (
     <div className="contact">
       <h1 className="heading">Contact Me</h1>
@@ -30,6 +39,7 @@ function Contact() {
           <Form
             inptype="input"
             id="first_name"
+            name="firstName"
             type="text"
             label="First Name"
             placeholder="Enter your first name"
@@ -40,6 +50,7 @@ function Contact() {
           <Form
             inptype="input"
             id="last_name"
+            name="lastName"
             type="text"
             label="Last Name"
             placeholder="Enter your last name"
@@ -50,6 +61,7 @@ function Contact() {
         <Form
           inptype="input"
           id="email"
+          name="email"
           type="email"
           label="Email"
           placeholder="yourname@email.com"
@@ -59,6 +71,7 @@ function Contact() {
         <Form
           id="message"
           inptype="textarea"
+          name="message"
           type="text"
           label="Message"
           placeholder="Send me a message and I'll reply you as soon as possible..."
@@ -69,6 +82,7 @@ function Contact() {
           <input
             id="checkbox"
             type="checkbox"
+            name="check"
             value={contactForm.check}
             handleChange={handleChange}
           />
