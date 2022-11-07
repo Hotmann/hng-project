@@ -1,11 +1,5 @@
 const LINK__DATA = [
   {
-    id: "contact",
-    url: "/contact",
-    btnName: "Contact",
-    title: "Contact",
-  },
-  {
     id: "btn__twitter",
     url: "https://twitter.com/_Hotmann",
     btnName: "Twitter Link",
@@ -40,6 +34,12 @@ const LINK__DATA = [
     url: "https://books.zuri.team/design-rules",
     btnName: "Design Books",
     title: "The design book offered by zuri are the best",
+  },
+  {
+    id: "contact",
+    url: "/contact",
+    btnName: "Contact",
+    title: "Contact",
   },
 ];
 

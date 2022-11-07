@@ -8,6 +8,7 @@ const Form = (props) => {
     case "input":
       inputElem = (
         <input
+          id={props.id}
           className="form-input"
           onChange={props.handleChange}
           value={props.value}
@@ -19,6 +20,7 @@ const Form = (props) => {
     case "textarea":
       inputElem = (
         <textarea
+          id={props.id}
           className="form-input"
           onChange={props.handleChange}
           value={props.value}
@@ -28,11 +30,11 @@ const Form = (props) => {
       );
       break;
     default:
-      inputElem = <input required />;
+      inputElem = <input id={props.id} required />;
   }
   return (
-    <div className={props.id}>
-      <label className={`${props.value} form-input-label`}>{props.label}</label>
+    <div className={props.name}>
+      <label htmlFor={props.id}>{props.label}</label>
       {inputElem}
     </div>
   );
