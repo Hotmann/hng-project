@@ -36,6 +36,7 @@ const Form = (props) => {
     <div className={props.name}>
       <label htmlFor={props.id}>{props.label}</label>
       {inputElem}
+      {props.error}
     </div>
   );
 };

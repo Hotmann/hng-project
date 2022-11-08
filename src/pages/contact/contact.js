@@ -13,17 +13,27 @@ function Contact() {
     message: "",
     check: false,
   });
+  const [error, setError] = useState(false);
 
   function handleSubmit(event) {
     event.preventDefault();
-    setContactForm({
-      firstName: "",
-      lastName: "",
-      email: "",
-      message: "",
-      check: false,
-    });
+    if (
+      contactForm.firstName.length === " " ||
+      contactForm.lastName.length === " " ||
+      contactForm.email.length === " " ||
+      contactForm.message.length === " "
+    ) {
+      setError(true);
+      setContactForm({
+        firstName: "",
+        lastName: "",
+        email: "",
+        message: "",
+        check: false,
+      });
+    }
   }
+  console.log(error);
   const handleChange = (event) => {
     setContactForm({ ...contactForm, [event.target.name]: event.target.value });
   };
@@ -45,6 +55,13 @@ function Contact() {
             placeholder="Enter your first name"
             value={contactForm.firstName}
             handleChange={handleChange}
+            error={
+              error && contactForm.firstName.length <= 0 ? (
+                <span>This is an hint to help user.</span>
+              ) : (
+                ""
+              )
+            }
           />
 
           <Form
@@ -56,6 +73,13 @@ function Contact() {
             placeholder="Enter your last name"
             value={contactForm.lastName}
             handleChange={handleChange}
+            error={
+              error && contactForm.lastName.length <= 0 ? (
+                <span>This is an hint to help user.</span>
+              ) : (
+                ""
+              )
+            }
           />
         </div>
         <Form
@@ -67,6 +91,13 @@ function Contact() {
           placeholder="yourname@email.com"
           value={contactForm.email}
           handleChange={handleChange}
+          error={
+            error && contactForm.email.length <= 0 ? (
+              <span>This is an hint to help user.</span>
+            ) : (
+              ""
+            )
+          }
         />
         <Form
           id="message"
@@ -77,6 +108,13 @@ function Contact() {
           placeholder="Send me a message and I'll reply you as soon as possible..."
           value={contactForm.message}
           handleChange={handleChange}
+          error={
+            error && contactForm.message.length <= 0 ? (
+              <span>Please enter a new message</span>
+            ) : (
+              ""
+            )
+          }
         />
         <div>
           <input
@@ -86,12 +124,12 @@ function Contact() {
             value={contactForm.check}
             handleChange={handleChange}
           />
-          <label id="label" for="checkbox">
+          <label id="label" htmlFor="checkbox">
             You agree to providing your data to Ogunbowale Uthman who may
             contact you.
           </label>
         </div>
-        <Button btnType="btn_submit">Send message</Button>
+        <Button btnType="btn__submit">Send message</Button>
       </form>
     </div>
   );

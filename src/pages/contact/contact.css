@@ -3,6 +3,10 @@
   padding: 0 11.9rem;
 }
 
+span {
+  color: red;
+}
+
 .heading {
   font-weight: 600;
   font-size: 36px;
