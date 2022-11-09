@@ -36,7 +36,11 @@ const Form = (props) => {
     <div className={props.name}>
       <label htmlFor={props.id}>{props.label}</label>
       {inputElem}
-      {props.error}
+      {/* {props.error && props.value.length <= 0 ? (
+        <p>Please enter a new message</p>
+      ) : (
+        ""
+      )} */}
     </div>
   );
 };

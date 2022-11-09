@@ -18,22 +18,16 @@ function Contact() {
   function handleSubmit(event) {
     event.preventDefault();
     if (
-      contactForm.firstName.length === " " ||
-      contactForm.lastName.length === " " ||
-      contactForm.email.length === " " ||
-      contactForm.message.length === " "
+      contactForm.firstName.length == 0 ||
+      contactForm.lastName.length == 0 ||
+      contactForm.email.length == 0 ||
+      contactForm.message.length == 0
     ) {
       setError(true);
-      setContactForm({
-        firstName: "",
-        lastName: "",
-        email: "",
-        message: "",
-        check: false,
-      });
+      console.log("error found");
     }
   }
-  console.log(error);
+
   const handleChange = (event) => {
     setContactForm({ ...contactForm, [event.target.name]: event.target.value });
   };
@@ -55,13 +49,14 @@ function Contact() {
             placeholder="Enter your first name"
             value={contactForm.firstName}
             handleChange={handleChange}
-            error={
-              error && contactForm.firstName.length <= 0 ? (
-                <span>This is an hint to help user.</span>
-              ) : (
-                ""
-              )
-            }
+            // error={error}
+            // error={
+            //   error && contactForm.firstName.length <= 0 ? (
+            //     <p>This is an hint to help user.</p>
+            //   ) : (
+            //     ""
+            //   )
+            // }
           />
 
           <Form
@@ -73,13 +68,14 @@ function Contact() {
             placeholder="Enter your last name"
             value={contactForm.lastName}
             handleChange={handleChange}
-            error={
-              error && contactForm.lastName.length <= 0 ? (
-                <span>This is an hint to help user.</span>
-              ) : (
-                ""
-              )
-            }
+            // error={error}
+            // error={
+            //   error && contactForm.lastName.length <= 0 ? (
+            //     <p>This is an hint to help user.</p>
+            //   ) : (
+            //     ""
+            //   )
+            // }
           />
         </div>
         <Form
@@ -91,13 +87,14 @@ function Contact() {
           placeholder="yourname@email.com"
           value={contactForm.email}
           handleChange={handleChange}
-          error={
-            error && contactForm.email.length <= 0 ? (
-              <span>This is an hint to help user.</span>
-            ) : (
-              ""
-            )
-          }
+          // error={error}
+          // error={
+          //   error && contactForm.email.length <= 0 ? (
+          //     <p>This is an hint to help user.</p>
+          //   ) : (
+          //     ""
+          //   )
+          // }
         />
         <Form
           id="message"
@@ -108,13 +105,14 @@ function Contact() {
           placeholder="Send me a message and I'll reply you as soon as possible..."
           value={contactForm.message}
           handleChange={handleChange}
-          error={
-            error && contactForm.message.length <= 0 ? (
-              <span>Please enter a new message</span>
-            ) : (
-              ""
-            )
-          }
+          // error={error}
+          // error={
+          //   error && contactForm.message.length <= 0 ? (
+          //     <p>Please enter a new message</p>
+          //   ) : (
+          //     ""
+          //   )
+          // }
         />
         <div>
           <input
@@ -122,7 +120,7 @@ function Contact() {
             type="checkbox"
             name="check"
             value={contactForm.check}
-            handleChange={handleChange}
+            onChange={handleChange}
           />
           <label id="label" htmlFor="checkbox">
             You agree to providing your data to Ogunbowale Uthman who may
